@@ -1,0 +1,72 @@
+body{
+    font-family: "Roboto Mono", monospace;
+    min-height: 854px;
+    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: white;  
+}
+.page-subtitle{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    background-color: #000000;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin: 10px; 
+}
+.btnSort{
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+.btnPlay{
+    border-radius: 50px;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+.playerCardDiv{
+    background-color:rgb(253, 251, 251);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+.MachineCardDiv{
+    background-color:rgb(245, 241, 241);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
