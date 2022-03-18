@@ -1,31 +1,32 @@
 
-var cartas = [{
-  nome: "Darth Vader",
+var cartas = [
+  {
+  nome: "Charmander",
   imagem:
-    "https://images-na.ssl-images-amazon.com/images/I/41i-0NH0q9L._SX328_BO1,204,203,200_.jpg",
+    "https://i.pinimg.com/originals/1a/bf/4b/1abf4b00ee767b8ebb5aa57bdc48627b.jpg",
   atributos: {
     ataque: 9,
-    defesa: 8,
-    magia: 2
+    defesa: 6,
+    evasao: 7
   }
 },
 {
   nome: "Bulbasauro",
   imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
   atributos: {
-    ataque: 7,
-    defesa: 8,
-    magia: 6
+    ataque: 6,
+    defesa: 7,
+    evasao: 9
   }
 },
 {
-  nome: "Shiryu de dragão",
+  nome: "Squirtle",
   imagem:
-    "http://pm1.narvii.com/6399/96fdb9d4fe6a9e72b9bc60ad418e3c43795e53b4_00.jpg",
+    "https://i.pinimg.com/564x/03/e5/18/03e518436db20497bf05cf6512863935.jpg",
   atributos: {
-    ataque: 5,
+    ataque: 6,
     defesa: 9,
-    magia: 10
+    evasao: 7
   }
 }]
 
@@ -41,7 +42,6 @@ function sortearCarta() {
     numeroCartaJogador = parseInt(Math.random() * 3);
   }
   cartaJogador = cartas[numeroCartaJogador];
-  console.log(cartaJogador);
 
   document.getElementById("btnSortear").disabled = true;
   document.getElementById("btnJogar").disabled = false;
@@ -58,7 +58,6 @@ function obtemAtributoSelecionado() {
 }
 
 function jogar() {
-  console.log("chamou");
   var atributoSelecionado = obtemAtributoSelecionado();
   var divResultado = document.getElementById("resultado");
 
@@ -66,12 +65,12 @@ function jogar() {
     cartaJogador.atributos[atributoSelecionado] >
     cartaMaquina.atributos[atributoSelecionado]
   ) {
-    htmlResultado = "<p class='resultado-final'>Venceu</p>";
+    htmlResultado = "<p class='resultado-final'>Você venceu!</p>";
   } else if (
     cartaJogador.atributos[atributoSelecionado] <
     cartaMaquina.atributos[atributoSelecionado]
   ) {
-    htmlResultado = "<p class='resultado-final'>Perdeu</p>";
+    htmlResultado = "<p class='resultado-final'>Você perdeu...</p>";
   } else {
     htmlResultado = "<p class='resultado-final'>Empatou</p>";
   }
@@ -84,7 +83,6 @@ function jogar() {
 function exibirCartaJogador() {
   var divCartaJogador = document.getElementById("carta-jogador");
   divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-  // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
   var moldura =
     '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
   var tagHTML = "<div id='opcoes' class='carta-status'>";

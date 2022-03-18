@@ -1,7 +1,10 @@
+*{
+    overflow-y: hidden;
+}
 body {
     font-family: 'Roboto Mono', monospace;
     min-height: 854px;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png');
+    background-image: url('https://w.wallha.com/ws/13/1GevBC4r.jpg');
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -22,9 +25,12 @@ body {
 button, .button-jogar {
     padding: .8rem 1.5rem;
     margin: 1rem 0;
-    border-radius: 5px;
+    border-radius: 50px;
     border: none;
     font-size: 1rem;
+    width: 10%;
+    align-self: center;
+    background-color: #0D98BA;
 }
 
 h2 {
@@ -80,7 +86,7 @@ h2 {
     text-transform: uppercase;
     padding: 1rem;
     border: 2px solid black;
-    background-color: black;
+    border: none;
 }
 
 .--spacing {
